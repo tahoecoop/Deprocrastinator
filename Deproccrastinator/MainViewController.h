@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+@class ListItem;
+@interface MainViewController : UIViewController 
 
 
 @end

@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		BA0F54171B5D885700838975 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0F54161B5D885700838975 /* main.m */; };
 		BA0F541A1B5D885700838975 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0F54191B5D885700838975 /* AppDelegate.m */; };
-		BA0F541D1B5D885700838975 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0F541C1B5D885700838975 /* ViewController.m */; };
+		BA0F541D1B5D885700838975 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0F541C1B5D885700838975 /* MainViewController.m */; };
 		BA0F54201B5D885700838975 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA0F541E1B5D885700838975 /* Main.storyboard */; };
 		BA0F54221B5D885700838975 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0F54211B5D885700838975 /* Images.xcassets */; };
 		BA0F54251B5D885700838975 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA0F54231B5D885700838975 /* LaunchScreen.xib */; };
 		BA0F54311B5D885700838975 /* DeproccrastinatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0F54301B5D885700838975 /* DeproccrastinatorTests.m */; };
+		BA7E4A171B5DB8B400C58CB2 /* ListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BA7E4A161B5DB8B400C58CB2 /* ListItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,16 @@
 		BA0F54161B5D885700838975 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BA0F54181B5D885700838975 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BA0F54191B5D885700838975 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BA0F541B1B5D885700838975 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BA0F541C1B5D885700838975 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BA0F541B1B5D885700838975 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		BA0F541C1B5D885700838975 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		BA0F541F1B5D885700838975 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA0F54211B5D885700838975 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BA0F54241B5D885700838975 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BA0F542A1B5D885700838975 /* DeproccrastinatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeproccrastinatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA0F542F1B5D885700838975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA0F54301B5D885700838975 /* DeproccrastinatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeproccrastinatorTests.m; sourceTree = "<group>"; };
+		BA7E4A151B5DB8B400C58CB2 /* ListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListItem.h; sourceTree = "<group>"; };
+		BA7E4A161B5DB8B400C58CB2 /* ListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +86,10 @@
 			children = (
 				BA0F54181B5D885700838975 /* AppDelegate.h */,
 				BA0F54191B5D885700838975 /* AppDelegate.m */,
-				BA0F541B1B5D885700838975 /* ViewController.h */,
-				BA0F541C1B5D885700838975 /* ViewController.m */,
+				BA0F541B1B5D885700838975 /* MainViewController.h */,
+				BA0F541C1B5D885700838975 /* MainViewController.m */,
+				BA7E4A151B5DB8B400C58CB2 /* ListItem.h */,
+				BA7E4A161B5DB8B400C58CB2 /* ListItem.m */,
 				BA0F541E1B5D885700838975 /* Main.storyboard */,
 				BA0F54211B5D885700838975 /* Images.xcassets */,
 				BA0F54231B5D885700838975 /* LaunchScreen.xib */,
@@ -219,7 +224,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA0F541D1B5D885700838975 /* ViewController.m in Sources */,
+				BA7E4A171B5DB8B400C58CB2 /* ListItem.m in Sources */,
+				BA0F541D1B5D885700838975 /* MainViewController.m in Sources */,
 				BA0F541A1B5D885700838975 /* AppDelegate.m in Sources */,
 				BA0F54171B5D885700838975 /* main.m in Sources */,
 			);
@@ -417,6 +423,7 @@
 				BA0F54361B5D885700838975 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA0F54371B5D885700838975 /* Build configuration list for PBXNativeTarget "DeproccrastinatorTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +432,7 @@
 				BA0F54391B5D885700838975 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
